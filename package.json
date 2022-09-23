@@ -6,6 +6,7 @@
   "author": "Jean M.C. <manchunyip2008@gmail.com>",
   "license": "MIT",
   "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "private": false,
   "scripts": {
     "build": "rm -rf dist; tsc; node esbuild.config.js"
