@@ -1,6 +1,6 @@
 if (typeof window !== "undefined") import("@webcomponents/custom-elements");
 
-import React, { FunctionComponent } from "react";
+import React, { Fragment, FunctionComponent } from "react";
 import * as ReactDOM from "react-dom/client";
 import reactToWebComponent from "react-to-webcomponent";
 import shadow from "react-shadow";
@@ -14,11 +14,11 @@ export const PocComponent: React.FunctionComponent<Props> = ({
   testNumber,
   testString,
 }) => (
-  <>
+  <Fragment>
     <h1>This is web component</h1>
     <h3>testNumber: {testNumber}</h3>
     <h3>testString: {testString}</h3>
-  </>
+  </Fragment>
 );
 PocComponent.displayName = "PocComponent";
 
