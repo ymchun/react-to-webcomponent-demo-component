@@ -5,7 +5,8 @@
   "repository": "git@github.com:ymchun/react-to-webcomponent-demo-component.git",
   "author": "Jean M.C. <manchunyip2008@gmail.com>",
   "license": "MIT",
-  "module": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
   "private": false,
   "scripts": {
@@ -18,8 +19,12 @@
     "react-to-webcomponent": "^2.0.0-alpha.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/plugin-transform-typescript": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@vip30/esbuild-plugin-babel": "^0.2.3",
     "esbuild": "^0.15.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

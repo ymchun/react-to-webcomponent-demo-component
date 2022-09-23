@@ -2,6 +2,7 @@ if (typeof window !== "undefined") import("@webcomponents/custom-elements");
 
 import React, { Fragment, FunctionComponent } from "react";
 import * as ReactDOM from "react-dom/client";
+import * as PropTypes from "prop-types";
 import reactToWebComponent from "react-to-webcomponent";
 import shadow from "react-shadow";
 
@@ -21,6 +22,10 @@ export const PocComponent: React.FunctionComponent<Props> = ({
   </Fragment>
 );
 PocComponent.displayName = "PocComponent";
+PocComponent.propTypes = {
+  testNumber: PropTypes.number.isRequired,
+  testString: PropTypes.string.isRequired,
+};
 
 export function registerPocComponentElement() {
   if (typeof window === "undefined") return;
@@ -39,12 +44,11 @@ export function registerPocComponentElement() {
     React as never,
     ReactDOM as never,
     {
-      shadow: true,
       props: {
         testNumber: Number,
         testString: String,
       },
     }
   );
-  customElements.define("poc-component", WebPocComponent as never);
+  window.customElements.define("poc-component", WebPocComponent as never);
 }
