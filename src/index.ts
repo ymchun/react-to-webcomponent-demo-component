@@ -1,1 +1,1 @@
-export * from "~/components/poc-component";
+export * from "./components/poc-component";

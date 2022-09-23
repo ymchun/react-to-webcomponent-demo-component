@@ -1,6 +1,6 @@
 import React from "react";
 
-import { defineCustomElement } from "~/components/custom-element";
+import { defineCustomElement } from "../custom-element";
 
 export type Props = {
   testNumber: number;

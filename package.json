@@ -8,7 +8,7 @@
   "module": "dist/index.js",
   "private": false,
   "scripts": {
-    "build": "rm -rf dist; node esbuild.config.js"
+    "build": "rm -rf dist; tsc; node esbuild.config.js"
   },
   "dependencies": {
     "@webcomponents/custom-elements": "^1.5.0",
