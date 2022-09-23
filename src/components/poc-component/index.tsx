@@ -39,6 +39,7 @@ export function registerPocComponentElement() {
     React as never,
     ReactDOM as never,
     {
+      shadow: true,
       props: {
         testNumber: Number,
         testString: String,
