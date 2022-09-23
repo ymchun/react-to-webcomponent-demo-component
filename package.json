@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@webcomponents/custom-elements": "^1.5.0",
-    "param-case": "^3.0.4",
+    "prop-types": "^15.8.1",
     "react-shadow": "^19.0.3",
-    "react-to-webcomponent": "1.7.2"
+    "react-to-webcomponent": "^2.0.0-alpha.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
