@@ -1,0 +1,30 @@
+{
+  "name": "react-to-webcomponent-demo-component",
+  "version": "1.0.0",
+  "description": "demo component of react-to-webcomponent",
+  "repository": "git@github.com:ymchun/react-to-webcomponent-demo-component.git",
+  "author": "Jean M.C. <manchunyip2008@gmail.com>",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "private": false,
+  "scripts": {
+    "build": "rm -rf dist; node esbuild.config.js"
+  },
+  "dependencies": {
+    "@webcomponents/custom-elements": "^1.5.0",
+    "param-case": "^3.0.4",
+    "react-shadow": "^19.0.3",
+    "react-to-webcomponent": "1.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "esbuild": "^0.15.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
